@@ -1,26 +1,34 @@
-This is a starter template for [Ionic](http://ionicframework.com/docs/) projects.
+# Store Management App (for a3bout coffee)
 
-## How to use this template
+## Documentation
 
-*This template does not work on its own*. The shared files for each starter are found in the [ionic2-app-base repo](https://github.com/ionic-team/ionic2-app-base).
+기획, 기술 요소, 어플리케이션 기능 등 자세한 내용은 [wiki](https://github.com/udsdevteam/store-management-a3bout/wiki) 를 참조해주시기 바랍니다. 
 
-To use this template, either create a new ionic project using the ionic node.js utility, or copy the files from this repository into the [Starter App Base](https://github.com/ionic-team/ionic2-app-base).
+### Features
 
-### With the Ionic CLI:
+### How to start
 
-Take the name after `ionic2-starter-`, and that is the name of the template to be used when using the `ionic start` command below:
+#### Prerequisites
+* [node](https://github.com/nodejs/node)
 
-```bash
+* [yarn](https://github.com/yarnpkg/yarn)
+
+* [ionicframework](https://github.com/ionic-team/ionic) 
+
+```
 $ sudo npm install -g ionic cordova
-$ ionic start mySideMenu sidemenu
 ```
 
-Then, to run it, cd into `mySideMenu` and run:
+#### Installing all the dependencies of project
 
-```bash
-$ ionic cordova platform add ios
-$ ionic cordova run ios
+```
+$ yarn
 ```
 
-Substitute ios for android if not on a Mac.
+#### Run an app
+
+```
+$ ionic serve -l
+```
+
 
