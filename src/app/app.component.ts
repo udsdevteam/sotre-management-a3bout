@@ -4,6 +4,8 @@ import { StatusBar } from '@ionic-native/status-bar';
 import { SplashScreen } from '@ionic-native/splash-screen';
 
 import { HomePage } from '../pages/home/home';
+import { LoginPage } from '../pages/login/login';
+import { ToDoPage } from '../pages/todo/todo';
 import { ListPage } from '../pages/list/list';
 
 @Component({
@@ -14,7 +16,9 @@ export class MyApp {
 
   rootPage: any = HomePage;
 
-  pages: Array<{title: string, component: any}>;
+  isLogin: Boolean = false;
+
+  pages: Array<{ title: string, component: any }>;
 
   constructor(public platform: Platform, public statusBar: StatusBar, public splashScreen: SplashScreen) {
     this.initializeApp();
@@ -22,9 +26,15 @@ export class MyApp {
     // used for an example of ngFor and navigation
     this.pages = [
       { title: 'Home', component: HomePage },
+      { title: 'ToDo', component: ToDoPage },
       { title: 'List', component: ListPage }
     ];
 
+    // TODO : 로그인 체크 임시
+    if (!this.isLogin) {
+      // this.rootPage = ToDoPage;
+      this.rootPage = LoginPage;
+    }
   }
 
   initializeApp() {
