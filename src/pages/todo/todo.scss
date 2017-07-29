@@ -1,0 +1,16 @@
+page-todo {
+    .todoTitle {
+        margin-bottom : 0px;
+    }
+    .name {
+        width: 80%;
+        display: inline-flex;
+    }
+    .insert {
+        width: 15%;
+        display: inline-flex;
+    }
+    ion-note {
+        margin-left : 10px;
+    }
+}

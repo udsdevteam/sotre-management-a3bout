@@ -1,0 +1,52 @@
+<ion-header>
+
+  <ion-navbar>
+    <ion-title>ToDo</ion-title>
+  </ion-navbar>
+
+</ion-header>
+
+<ion-content>
+   <ion-item class="name">
+    <ion-label color="primary">이름</ion-label>
+    <ion-input></ion-input>
+  </ion-item>
+  <button  class="insert" ion-button color="dark" (click)="onClick()">등록</button>
+  <ion-item>
+    <ion-label color="primary">내용</ion-label>
+    <ion-input></ion-input>
+  </ion-item>
+
+  <ion-item>  
+    <ion-label class="todoTitle">
+      <ion-badge>할 일</ion-badge> 
+    </ion-label>
+  </ion-item>  
+
+  <ion-item>
+    <ion-label>캡슐 커피 1Box 주문
+      <p><span>준호</span><ion-note>3:43 pm</ion-note></p>
+    </ion-label>
+    <ion-checkbox color="dark" checked="false"></ion-checkbox>
+  </ion-item>
+  <ion-item>
+    <ion-label>스케줄 페이지 완성
+      <p><span>상자</span><ion-note>5:43 pm</ion-note></p>
+    </ion-label>
+    <ion-checkbox color="dark" checked="false"></ion-checkbox>
+  </ion-item>
+
+  <ion-item>  
+    <ion-label class="todoTitle">
+      <ion-badge>완료</ion-badge> 
+    </ion-label>
+  </ion-item>
+
+  <ion-item>
+    <ion-label>아이오닉 페이지 완성
+      <p><span>준호</span><ion-note>6:43 pm</ion-note></p>
+    </ion-label>
+    <ion-checkbox color="dark" checked="true"></ion-checkbox>
+  </ion-item>
+
+</ion-content>
